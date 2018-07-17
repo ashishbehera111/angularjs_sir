@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .first>div{
+        padding: 1em;
+        background-color: crimson
+    }
+    .first>div:nth-child(odd){
+        background-color: darkgrey
+    }
+    .first{
+        display:grid;
+        grid-template-columns: repeat(1,1fr 2fr 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px,auto)
+    }
+    .one{
+        grid-column: 1/span 3;
+    }
+    .two{
+        grid-row: 2/span 4;
+    }
+    .six{
+    grid-column:2;
+    grid-row:4/span 2;
+    
+        
+    }
+    .four{
+        grid-column: 3;
+        grid-row:2/span 4
+    }
+    .five{
+        grid-column: 2;
+
+    }
+    .second>div{
+          padding: 2em;
+          background-color:silver;
+
+    }
+    .second>div:nth-child(odd){
+        background-color: darkgray;
+    }
+    .second{
+        display:grid;
+        grid-template-columns: repeat(1,1fr 2fr 1fr);
+        grid-gap:1em;
+        grid-auto-rows: minmax(100,auto)
+    }
+    .t1{
+       grid-column: 1/span 3;    
+    }
+    .t8{
+        grid-column: 1/span 3;
+    }
+    .third>div{
+        padding:2em;
+        background-color: rgb(76, 143, 143);
+
+    }
+    .third>div:nth-child(odd){
+        background-color: darkgray
+    }
+    .third{
+        display: grid;
+        grid-template-columns: repeat(1,2fr 2fr 2fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px,auto)
+    }
+    .a1{
+     grid-row: 1/span 3;
+    }
+    .a2{
+        grid-row: 1/span 3;
+    }
+    .a3{
+        grid-row: 1/span 3;
+    }
+    .four{
+        display: grid;
+        grid-template-columns: repeat(1,1fr 2fr);
+        grid-gap:1em;
+        grid-auto-rows: minmax(100px,auto)
+    }
+    .four>div{
+        padding: 2em;
+        background-color: silver;
+
+    }
+    .four>div:nth-child(odd){
+        background-color: darkgray
+    }
+    .five{
+        display:grid;
+        grid-template-columns: repeat(1,2fr 1fr);
+        grid-gap:1em;
+        grid-auto-rows: minmax(100px,auto)
+    }
+    .five>div{
+        padding:2em;
+        background-color: silver
+    }
+    .five>div:nth-child(odd){
+        background-color:darkgray;
+    }
+    .six{
+        display: grid;
+        grid-template-columns: repeat(1,1fr 2fr);
+        grid-gap:1em;
+        grid-auto-rows:minmax(100px,auto)
+    }
+    .six>div{
+padding: 2em;
+background-color: slategray;
+    }
+    .six>div:nth-child(odd){
+        background-color: grey;
+    }
+    .d1{
+ grid-row: 1/span 3;
+    }
+    .d2{
+        grid-row:2
+    }
+    .seven>div{
+      padding:8em;
+      background-color: crimson;
+
+    }
+    .seven{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        grid-auto-rows:minmax(100px,auto);
+    }
+
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="first">   
+        <div class="one"> 1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+
+        <div class="six">6</div>
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="second">
+        <div class="t1">1</div>
+        <div class="t2">2</div>
+        <div class="t3">3</div>
+        <div class="t4">4</div>
+        <div class="t5">5</div>
+        <div class="t6">6</div>
+        <div class="t7">7</div>
+        <div class="t8">8</div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="third">
+        <div class="a1">1</div>
+        <div class="a2">2</div>
+        <div class="a3">3</div>
+    </div>
+    <br>
+    <br>
+    <div class="four">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+    </div>
+    <br>
+    <br>
+    
+
+    <div class="five">
+        <div class="c1">1</div>
+        <div class="c2">2</div>
+    </div>
+    <br>
+    <br>
+    <div class="six">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+    </div>
+    <div class="seven">
+        <div class="e1">footer</div>
+    </div>
+</body>
+</html>
